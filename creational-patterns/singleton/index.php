@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-require 'src/Singleton.php';
-require 'src/SingletonLogger.php';
-require 'src/SingletonConfig.php';
+foreach (glob("src/*.php") as $filename) { require $filename; }
 
 use DesignPatterns\CreationalPatterns\Singleton\SingletonConfig;
 use DesignPatterns\CreationalPatterns\Singleton\SingletonLogger;

@@ -27,5 +27,5 @@ A lot of people consider the Singleton pattern to be an antipattern.
 - The Singleton pattern is often misused and used in cases where it is not necessary, leading to unnecessary complexity
   in the code.
 
-Consider to use Dependency Injection and Inversion of Control (IoC) instead to improve the management of instances and
+Consider to use Dependency Injection and Inversion of Control instead to improve the management of instances and
 dependencies in your application. 
