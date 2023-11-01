@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\CreationalPatterns\FactoryMethod;
-
 /**
  * The abstract Creator which contains the factory method.
  */

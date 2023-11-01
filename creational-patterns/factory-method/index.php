@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-foreach (glob("src/*.php") as $filename) { require $filename; }
-
-use DesignPatterns\CreationalPatterns\FactoryMethod\Creator;
-use DesignPatterns\CreationalPatterns\FactoryMethod\CreatorFacebook;
-use DesignPatterns\CreationalPatterns\FactoryMethod\CreatorLinkedIn;
+spl_autoload_register(function ($class) {
+    $file = str_replace('\\', '/', $class) . '.php';
+    $path = 'src/' . $file;
+    require_once $path;
+});
 
 /**
  * Note that this client code method can work with any subclass of Creator since it

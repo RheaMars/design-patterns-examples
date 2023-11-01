@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-foreach (glob("src/*.php") as $filename) { require $filename; }
-
-use DesignPatterns\CreationalPatterns\Singleton\SingletonConfig;
-use DesignPatterns\CreationalPatterns\Singleton\SingletonLogger;
+spl_autoload_register(function ($class) {
+    $file = str_replace('\\', '/', $class) . '.php';
+    $path = 'src/' . $file;
+    require_once $path;
+});
 
 // Check logger singleton:
 $logger1 = SingletonLogger::getInstance();

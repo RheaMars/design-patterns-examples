@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\CreationalPatterns\Singleton;
-
-use Exception;
-
 class Singleton
 {
     private static array $instances = [];

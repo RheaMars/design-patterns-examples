@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace DesignPatterns\CreationalPatterns\Singleton;
-
 class SingletonLogger extends Singleton
 {
     private $fileHandle;
